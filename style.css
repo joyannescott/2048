@@ -1,0 +1,230 @@
+body{
+	position:relative;
+	width: 100%;
+}
+.game{
+   display:block;
+   position:relative;
+   top: 100px;
+   left: 2%;
+   text-align: center;
+   width: 400px;
+   height:400px;
+   margin: 0px auto;
+}
+.game table{
+  width:100%;
+  height:100%;
+}
+
+.game table,td{
+ border-collapse:collapse;
+}
+.game td{
+	border: 10px solid #c0c0c0;
+	border-radius: 5px;
+    width:100px;
+    height:80px;
+}
+
+.block00, .block01, .block02, .block03, 
+.block10, .block11, .block12, .block13, 
+.block20, .block21, .block22, .block23, 
+.block30, .block31, .block32, .block33  {
+   display:block;
+   position:absolute;
+   border-radius:5px;
+   width:88px;
+   height:88px;
+  	-webkit-transition: .5s forwards;
+	-moz-transition: .2s forwards;
+	-ms-transition: .2s forwards;
+	-o-transition: .2s forwards;
+	transition: .2s forwards;
+
+}
+.block00{
+   top:10px;
+   left:10px;
+}
+.block01{
+   top:10px;
+   left:107px;
+}
+.block02{
+   top:10px;
+   left:204px;
+}
+.block03{
+   top:10px;
+   left:302px;
+}
+.block10{
+   top:107px;
+   left:10px;
+}
+.block11{
+   top:107px;
+   left:107px;
+}
+.block12{
+   top:107px;
+   left:204px;
+}
+.block13{
+   top:107px;
+   left:302px;
+}
+.block20{
+   top:204px;
+   left:10px;
+}
+.block21{
+   top:204px;
+   left:107px;
+}
+.block22{
+   top:204px;
+   left:204px;
+}
+.block23{
+   top:204px;
+   left:302px;
+}
+.block30{
+   top:301px;
+   left:10px;
+}
+.block31{
+   top:301px;
+   left:107px;
+}
+.block32{
+   top:301px;
+   left:204px;
+}
+.block33{
+   top:301px;
+   left:302px;
+}
+
+
+
+.content0, .content1, .content2, .content3,
+.content4, .content5, .content6, .content7,
+.content8, .content9, .content10, .content11,
+.content12, .content13, .content14, .content15{
+	display:block;
+	display:relative;
+	width:100%;
+	height:100%;
+    background-color:red;
+    line-height:88px;
+    color:#fff;
+    font-size:48px;
+    text-align:center;
+}
+.content0{
+    background-color:white;
+}
+.content1::after{
+	 content: "2";
+}
+.content1{
+    background-color:#cc0000;
+}
+.content1::after{
+	 content: "2";
+}
+.content2{
+    background-color:#F60;
+}
+.content2::after{
+	 content: "4";
+}
+.content3{
+    background-color: #FD0;
+}
+.content3::after{
+	 content: "8";
+}
+.content4{
+    background-color:#093;
+}
+.content4::after{
+	 content: "16";
+}
+.content5{
+    background-color:#09F;
+}
+.content5::after{
+	 content: "32";
+}
+.content6{
+    background-color: #96F;
+}
+.content6::after{
+	 content: "64";
+}
+.content7{
+    background-color:purple;
+}
+.content7::after{
+	 content: "128";
+}
+.content8{
+    background-color:#cc0000;
+}
+.content8::after{
+	 content: "256";
+}
+.content9{
+    background-color:#F60;
+}
+.content9::after{
+	 content: "512";
+}
+.content10{
+    background-color: #FD0;
+}
+.content10::after{
+	 content: "1024";
+}
+.content11{
+    background-color:#093;
+}
+.content11::after{
+	 content: "2048";
+}
+.content12{
+    background-color:#09F;
+}
+.content12::after{
+	 content: "4096";
+}
+.move-right{
+   	-webkit-transform: translateX(97px);
+	-moz-transform: translateX(97px);
+	-ms-transform: translateX(97px);
+	-o-transform: translateX(97px);
+	transform: translateX(97px);
+}
+
+.move-down{
+   	-webkit-transform: translateY(97px);
+	-moz-transform: translateY(97px);
+	-ms-transform: translateY(97px);
+	-o-transform: translateY(97px);
+	transform: translateY(97px);
+}
+
+@media screen and (max-width: 640px) {
+.game{
+   top: 10px;
+   left: 10px;
+   text-align: center;
+}
+
+}
+
+
